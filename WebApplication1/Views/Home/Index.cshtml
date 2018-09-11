@@ -3,20 +3,10 @@
 @{
     /**/
     ViewBag.Title = "Product Name";
-    Layout = "~/Views/Share/_BasicLayout.cshtml";
+    //Layout = "~/Views/Share/_BasicLayout.cshtml";
+    //Layout = null;
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    <div>
-        <p>@Model.Name</p>
-        <p>@Model.Description</p>
-    </div>
-</body>
-</html>
+Name: @Model.Name;
+<br />
+Description: @Model.Description

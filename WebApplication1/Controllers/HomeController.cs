@@ -19,5 +19,10 @@ namespace WebApplication1.Controllers
         {
             return View(_myProduct);
         }
+
+        public ActionResult NameAndPrice()
+        {
+            return View(_myProduct);
+        }
     }
 }
