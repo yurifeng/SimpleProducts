@@ -50,5 +50,23 @@ namespace WebApplication1.Controllers
             ViewBag.Supplier = null;
             return View(_myProduct);
         }
+
+        /// <summary>
+        /// 添加Action
+        /// localhost:12306/Home/DemoArray
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult DemoArray()
+        {
+            Product[] arr =
+            {
+                new Product{Name="yty",Price=250},
+                new Product{Name="livir",Price=270},
+                new Product{Name="jsd",Price=180},
+                new Product{Name="livir",Price=280}
+            };
+
+            return View(arr);
+        }
     }
 }
